@@ -7,90 +7,118 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="style.css">
     <title>Home|Danmar IT </title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Orbitron:wght@400;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark " aria-label="Offcanvas navbar large">
     <div class="container-fluid">
-        <div style="width: 400px;"><h3 class="text-center" style="color:rgb(0, 170, 255); text-shadow: 0 0 4px #0023d1, 0 0 5px #13eae7;">DANMAR IT SOLUTIONS</h3></div>
-        <div>
-            <a class="btn btn-dark" href="index.html">Home</a>
-            <a class="btn btn-info" href="quote.html">Get a Quote</a>
+      <a class="navbar-brand px-3" href="index.html"><img style="width:50px; margin:0" src="lib/logo.png" alt="">DANMAR IT SOLUTIONS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-white bg-transparent" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">DANMAR IT</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link text-decoration-underline active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-underline" href="quote.html">Get a Quote</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-decoration-underline" href="downloads.html">Software</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-decoration-underline" href="contactUs.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </nav>
 
-  <section>
-    <div class="bg-image"></div>
+  <section id="cover">
     <div class="bg-text">
-      <h1>We solve your IT problems...</h1>
+      <h1 class="MMD">We solve your IT problems...</h1>
       <p>Technology has reached a point where it is difficult to live without it. Therefore it is best to maintain your IT equipment and use the best, yet feasible solution to run core functions of your business. It can be difficult, but don't worry, we are here to help.</p>
       <a href="#middle"><btn class="btn btn-danger">ABOUT US</btn></a>
     </div>
-    <div style="width: 300px; position:absolute; top:7%; left:0%; z-index:1"><img src="lib/logo.png" class="logo" style="height:300px ; width:300px"></div>
-
   </section>
-  <section class="m-bg-img" style="justify-content:center">
-    <div id="middle">
-      <div class="container px-4 py-5 bg2 mt-xxl-5 centered" id="icon-grid">
+
+  <section  id="about" class="ORB">
+    <div class="p-1 bg-dark" id="middle">
+      <div class="container px-4 py-5 bg2" style="margin-top: 4rem; margin-bottom: 4rem;" id="icon-grid">
         <h2 class="pb-2 border-bottom">Our Services</h2>
     
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
-          <div class="col d-flex align-items-start">
+        <div class="row row-cols-auto  g-4 py-5">
+          <div class="col col-12 col-md-4 col-lg-3">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
-            <div>
-              <h4 class="fw-bold mb-0">Repair Hardware</h4>
+            <div class="p-1 border">
+              <h4 class="fw-bold">Repair Hardware</h4>
               <p>We can repair any IT related hardware including printers, PC's, Laptops, Smartphones, Consoles, etc. (On-site or at our office)</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col col-12 col-md-4 col-lg-3">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
-            <div>
-              <h4 class="fw-bold mb-0">Solve Software Issues</h4>
+            <div class="p-1 border">
+              <h4 class="fw-bold">Solve Software Issues</h4>
               <p>We can solve any software issues via remote software, on-site or at our office</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col col-12 col-md-4 col-lg-3">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"></use></svg>
-            <div>
-              <h4 class="fw-bold mb-0">Install PC Components</h4>
+            <div class="p-1 border">
+              <h4 class="fw-bold">Install PC Components</h4>
               <p>If you need an upgrade or replacement of parts in your IT equipment, we can install it. We will quote you first and wait for your go-ahaed.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col col-12 col-md-4 col-lg-3">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"></use></svg>
-            <div>
-              <h4 class="fw-bold mb-0">Setup Networks</h4>
+            <div class="p-1 border">
+              <h4 class="fw-bold">Setup Networks</h4>
               <p>We can setup from smaller networks like network printers to larger networks for infrastructures.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col col-12 col-md-4 col-lg-3">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"></use></svg>
-            <div>
-              <h4 class="fw-bold mb-0">Contracts</h4>
+            <div class="p-1 border">
+              <h4 class="fw-bold">Contracts</h4>
               <p>We provide contract-services like regular backups, maintenance checks and IT support on an ongoing basis.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col col-12 col-md-4 col-lg-3">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"></use></svg>
-            <div>
-              <h4 class="fw-bold mb-0">VOIP Systems</h4>
+            <div class="p-1 border">
+              <h4 class="fw-bold">VOIP Systems</h4>
               <p>We can install and configure Voice Over Internet Protocol systems to keep your business online.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col col-12 col-md-4 col-lg-3">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"></use></svg>
-            <div>
-              <h4 class="fw-bold mb-0">Hosting</h4>
+            <div class="p-1 border">
+              <h4 class="fw-bold">Hosting</h4>
               <p>We provide hosting services for incoming and outgoing mail servers and websites.</p>
             </div>
           </div>
-          <div class="col d-flex align-items-start">
+          <div class="col col-12 col-md-4 col-lg-3">
             <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"></use></svg>
-            <div>
-              <h4 class="fw-bold mb-0">Sales</h4>
+            <div class="p-1 border">
+              <h4 class="fw-bold">Sales</h4>
               <p>Ask us for a quote on IT equipment that fits your business/student/everyday needs.</p>
             </div>
           </div>
@@ -100,9 +128,9 @@
 
   </section>
 
+  
 
-
-    
+  
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
