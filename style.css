@@ -2,6 +2,7 @@ html{
   scroll-behavior: smooth;
 }
 body{
+  min-height: 100vh;
   margin: 0;
   padding: 0;
 }
@@ -178,4 +179,5 @@ img:hover {
   right: 0;
   bottom: 0;
   left: 0;
+  top:auto;
 }
