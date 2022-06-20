@@ -172,3 +172,10 @@ img:hover {
   transform: scale(1.08);
   transition: all .52s ease
 }
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
